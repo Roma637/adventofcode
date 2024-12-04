@@ -4,10 +4,6 @@ with open('day2_input.txt') as file:
     for line in file:
         reports.append([int(i) for i in line.split(" ")])
 
-# with open('day2_alt_input.txt') as file:
-#     for line in file:
-#         reports.append([int(i) for i in line.split(" ")])
-
 def safe(report):
     # this variable is True when report is 'supposed' to be increasing
     # and False when report is 'supposed' to be decreasing
