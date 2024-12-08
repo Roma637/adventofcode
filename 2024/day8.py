@@ -24,7 +24,7 @@ def mapprint(map):
         print(''.join(i))
     print('--')
 
-mapprint(map)
+# mapprint(map)
 
 # print(map)
 
@@ -40,7 +40,7 @@ for row in range(len(map)):
         else:
             coords[char] = [(row,col)]
 
-print(coords)
+# print(coords)
 
 for key in coords:
     # find antinodes for every possible pair
@@ -68,8 +68,21 @@ count_1 = 0
 for row in map:
     count_1 += row.count('#')
 
-# print("part 1")
-# print(count_1)
+print("part 1")
+print(count_1)
+
+# put the letters back
+
+for key in coords:
+    for row,col in coords[key]:
+        map[row][col] = key
+
+# put the dots back
+
+for row in range(len(map)):
+    for col in range(len(map[row])):
+        if map[row][col]=='#':
+            map[row][col]='.'
 
 # mapprint(map)
 
@@ -112,7 +125,7 @@ for key in coords:
 # '...#......##']
 # ideal = [list(i) for i in ideal]
 
-mapprint(map)
+# mapprint(map)
 # mapprint(ideal)
 
 count_2 = 0 
@@ -122,18 +135,3 @@ for row in map:
 
 print("part 2")
 print(count_2)
-
-# # put the letters back
-
-# for key in coords:
-#     for row,col in coords[key]:
-#         map[row][col] = key
-
-# # put the dots back
-
-# for row in range(len(map)):
-#     for col in range(len(map[row])):
-#         if map[row][col]=='#':
-#             map[row][col]='.'
-
-# mapprint(map)
