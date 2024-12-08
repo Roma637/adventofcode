@@ -24,8 +24,8 @@ for bef,aft in rules:
     else:
         before[aft] = [bef]
 
-print(after)
-print(before)
+# print(after)
+# print(before)
 
 updates = []
 

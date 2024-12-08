@@ -73,8 +73,8 @@ count = 0
 for row in map:
     count += row.count('X')
 
-# print("part 1")
-# print(count)
+print("part 1")
+print(count)
 
 # we know that guard is stuck in loop when: x,y match initial positions WHILE dir is 0,-1
 
@@ -176,5 +176,3 @@ for i,j in potential:
 
 print("part 2")
 print(count)
-
-#2563 too high
