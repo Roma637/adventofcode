@@ -26,8 +26,8 @@ with open("day4_input.txt") as file:
 #     cards.append((winning,yours))
 #     counts.append(1)
 
-print(cards)
-print(counts)
+# print(cards)
+# print(counts)
 
 count_1 = 0
 
